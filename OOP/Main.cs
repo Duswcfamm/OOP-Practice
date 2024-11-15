@@ -9,17 +9,17 @@ namespace PracticeOOP
         {
             
             TransactionSave storage = new TransactionSave();
-
+// test
             Orders newOrder = new Orders
             {
-                overdueDate = DateTime.Now.AddDays(7),
+                overdueDate = DateTime.Now.AddDays(10),
                 createdAt = DateTime.Now,
                 ID = 1,
-                customerID = 123,
-                totalAmount = 250.50,
-                orderStatus = "pending",
+                customerID = 1,
+                totalAmount = 1,
+                orderStatus = "packaging",
                 paymentStatus = "unpaid",
-                paymentMethodID = 2
+                paymentMethodID = 1
             };
             storage.SaveTransaction(newOrder);
             ////////////////////////////////////
